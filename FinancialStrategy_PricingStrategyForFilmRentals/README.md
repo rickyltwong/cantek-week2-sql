@@ -12,11 +12,16 @@ The data was first aggregated by the category id and the number of days of renta
 Then, the average amount of rental rate was calculated for each category id and the number of days of rental.
 
 ![Line Chart](./average_amount_of_rental_rate.png)
+
 After the visualization, it was observed that the rental rate is based on the number of days of rental.
 The rental rate can be considered fixed for the first 3 days of rental. After that, the rental rate increases.
 
-Also, the base rate is different for each film category. For example, the base rate for the "Comedy" category (category id: 5) is higher than the base rate for the "Classics" category (category id: 4).
+This holds true for all categories.
+
 ![Line Chart](./average_amount_of_rental_rate_per_category.png)
+
+Also, the base rate is different for each film category. For example, the base rate for the "Comedy" category (category id: 5) is higher than the base rate for the "Classics" category (category id: 4).
+
 ![Line Chart](./average_amount_of_rental_rate_of_categories_4_and_5.png)
 
 It was also observed that the rental rate can be different for some films. That may be due to the popularity of the film. The detailed analysis is, however, out of scope for this project.
@@ -46,13 +51,12 @@ ORDER BY days_of_rental;
 
 It is to show the first 5 rows of the output.
 
-| film\_id | category\_id | days\_of\_rental | avg\_amount |
-| :--- | :--- | :--- | :--- |
-| 1 | 6 | 1 | 0.99 |
-| 2 | 11 | 1 | 4.99 |
-| 3 | 6 | 1 | 2.99 |
-| 4 | 11 | 1 | 2.99 |
-| 5 | 8 | 1 | 2.99 |
+| film_id | category_id | days_of_rental | avg_amount |
+| :------ | :---------- | :------------- | :--------- |
+| 1       | 6           | 1              | 0.99       |
+| 2       | 11          | 1              | 4.99       |
+| 3       | 6           | 1              | 2.99       |
+| 4       | 11          | 1              | 2.99       |
+| 5       | 8           | 1              | 2.99       |
 
 [Link to the .csv output file](./output.csv)
-
