@@ -3,4 +3,4 @@
 .idea
 
 docker-compose.yml
-
+dql_script.sql
